@@ -1,0 +1,6 @@
+results <- resamples(list(lda=fit.lda, cart=fit.cart, knn=fit.knn, svm=fit.svm, rf=fit.rf))
+summary(results)
+dotplot(results)
+print(fit.lda)
+print(fit.knn)
+print(fit.cart)
